@@ -1,0 +1,87 @@
+$translucentBlack: RGBA(0, 0, 0, 0.3);
+
+body{
+	box-sizing: border-box;
+}
+header{
+	background-image: url(../../assets/img/header-bg.png);
+	nav{
+		width: 100%;
+		background-color: $translucentBlack;
+		display: flex;
+		justify-content: space-around;
+		padding-bottom: 3%;
+		padding-top: 3%;
+
+		.logo{
+			width: 60%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    color: white;
+		    text-transform: uppercase;
+		    font-size: 2rem;
+		}
+
+		.cart{
+			width: 23%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img{
+				width: 20px;
+				height: 20px;
+				margin-right: 8px;
+			}
+
+			p{
+				color: white;
+				padding-top: 3px;
+			}
+		}
+
+		.hamburger-menu{
+			width: 13%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+			.bar{
+				width: 40px;
+				height: 4px;
+				background-color: white;
+			}
+		}
+	}
+}
+
+.hero{
+	width: 100%;
+	background-image: url(../../assets/img/hero-bg.png);
+	padding-bottom: 100vh;
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+    color: white;
+
+    .hero-content{
+    	
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

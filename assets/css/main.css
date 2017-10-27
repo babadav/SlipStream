@@ -1,2 +1,52 @@
+body {
+  box-sizing: border-box; }
+
+header {
+  background-image: url(../../assets/img/header-bg.png); }
+  header nav {
+    width: 100%;
+    background-color: RGBA(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+    padding-top: 3%; }
+    header nav .logo {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-transform: uppercase;
+      font-size: 2rem; }
+    header nav .cart {
+      width: 23%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header nav .cart img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px; }
+      header nav .cart p {
+        color: white;
+        padding-top: 3px; }
+    header nav .hamburger-menu {
+      width: 13%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      header nav .hamburger-menu .bar {
+        width: 40px;
+        height: 4px;
+        background-color: white; }
+
+.hero {
+  width: 100%;
+  background-image: url(../../assets/img/hero-bg.png);
+  padding-bottom: 100vh;
+  background-size: cover;
+  background-color: black;
+  text-align: center;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */
