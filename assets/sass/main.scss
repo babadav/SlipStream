@@ -1,10 +1,15 @@
-$translucentBlack: RGBA(0, 0, 0, 0.3);
+$translucentBlack: RGBA(0, 0, 0, 0.2);
+
 
 body{
 	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
+
 header{
 	background-image: url(../../assets/img/header-bg.png);
+	background-size: cover;
+
 	nav{
 		width: 100%;
 		background-color: $translucentBlack;
@@ -43,12 +48,14 @@ header{
 
 		.hamburger-menu{
 			width: 13%;
+			padding-left: 10px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
 
 			.bar{
-				width: 40px;
+				width: 35px;
+				max-width: 35px;
 				height: 4px;
 				background-color: white;
 			}
@@ -59,18 +66,100 @@ header{
 .hero{
 	width: 100%;
 	background-image: url(../../assets/img/hero-bg.png);
-	padding-bottom: 100vh;
     background-size: cover;
-    background-color: black;
     text-align: center;
     color: white;
 
     .hero-content{
-    	
-    }
+    	position: relative;
+    	text-transform: uppercase;
+    	display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	    align-items: center;
+		
+		.hero-text{
+			margin-top: 13%;
+			margin-bottom: 7%;
+			h2{
+	    		width: 100%;
+	    		margin: 0 auto;
+	    		font-size: 1.2rem;
+	    		line-height: 1.2;
 
+    		sup{
+    			width: 100%;
+    			display: block;
+    			font-size: .8rem;
+    			}
+    		}
+		}
+    	
+
+    	img{
+    		width: 50%;
+		    margin: 0 auto;
+		    left: 25%;
+		    margin-bottom: 5%;
+    	}
+
+    	button{
+		    background-color: RGBA(500, 89, 58, 1.00);
+		    width: 150px;
+		    height: 40px;
+		    border-radius: 26px;
+		    color: white;
+		    font-size: 1rem;
+		    text-transform: uppercase;
+		    letter-spacing: 1.4px;
+		    margin-bottom: 30%;
+    	}
+    }
 }
 
+.board-slider-wrap{
+   width: 100%;
+   background-color: RGBA(14, 14, 14, 1.00);
+	
+	.board-slider-head{
+		margin-bottom: 30%;
+		h1{
+		   	position: relative;
+		    margin: 0 auto;
+		    color: white;
+		    font-size: 2rem;
+		    text-transform: uppercase;
+		    text-align: center;
+		    text-align: center;
+		    width: 50%;
+		    top: 70px;
+		    z-index: 10;
+		    font-style: italic;
+		    font-weight: bolder;
+    		text-decoration: underline;
+
+   		}
+
+	   img{
+		   	position: relative;
+		 	width: 50%;
+		    margin: 0 auto;
+		    left: 25%;
+		    margin-bottom: 5%;
+	   	}
+	}
+
+	.board-slider{
+		ul{
+			display: flex;
+			justify-content: space-between;
+
+			li{
+				transform: rotate(-60deg);
+			}
+		}
+	}  
+}
 
 
 
