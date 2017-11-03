@@ -87,33 +87,207 @@ header {
 
 .board-slider-wrap {
   width: 100%;
+  padding-bottom: 2vh;
   background-color: RGBA(14, 14, 14, 1); }
-  .board-slider-wrap .board-slider-head {
-    margin-bottom: 30%; }
-    .board-slider-wrap .board-slider-head h1 {
-      position: relative;
-      margin: 0 auto;
-      color: white;
-      font-size: 2rem;
-      text-transform: uppercase;
-      text-align: center;
-      text-align: center;
-      width: 50%;
-      top: 70px;
-      z-index: 10;
-      font-style: italic;
-      font-weight: bolder;
-      text-decoration: underline; }
-    .board-slider-wrap .board-slider-head img {
-      position: relative;
-      width: 50%;
-      margin: 0 auto;
-      left: 25%;
-      margin-bottom: 5%; }
+  .board-slider-wrap .board-slider-head h1 {
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-align: center;
+    width: 50%;
+    top: 70px;
+    z-index: 10;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline; }
+  .board-slider-wrap .board-slider-head img {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    left: 25%;
+    margin-bottom: 5%; }
   .board-slider-wrap .board-slider ul {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around;
+    overflow: hidden; }
     .board-slider-wrap .board-slider ul li {
-      transform: rotate(-60deg); }
+      transform: rotate(15deg); }
+  .board-slider-wrap .slider-dots-wrap {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto; }
+    .board-slider-wrap .slider-dots-wrap .dot {
+      width: 20px;
+      height: 20px;
+      background-color: RGBA(100, 203, 224, 1);
+      border-radius: 50px; }
+
+.promos-wrap {
+  width: 100%; }
+  .promos-wrap .beginners-guide {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    align-items: center;
+    background-image: url(../../assets/img/beginners-guide-bg.png);
+    background-color: RGBA(229, 88, 58, 1);
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 20%; }
+    .promos-wrap .beginners-guide h1 {
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: underline;
+      line-height: 1.4;
+      font-style: italic;
+      font-weight: 900;
+      margin-bottom: 5%; }
+    .promos-wrap .beginners-guide button {
+      width: 300px;
+      text-align: center;
+      height: 55px;
+      background-color: RGBA(72, 156, 174, 1);
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      border-radius: 25px; }
+
+.stream-events {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  flex-direction: column; }
+  .stream-events h1 {
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-align: center;
+    width: 50%;
+    top: 70px;
+    z-index: 10;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    line-height: 1.2; }
+  .stream-events img {
+    top: -30px;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    left: 3%;
+    margin-bottom: 5%; }
+
+.video-player {
+  background-color: RGBA(14, 14, 14, 1); }
+  .video-player p {
+    width: 95%;
+    margin: 0 auto;
+    font-style: italic;
+    line-height: 1.2;
+    font-size: 0.7rem; }
+  .video-player iframe {
+    width: 100%;
+    height: 300px; }
+  .video-player .now-playing {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    color: RGBA(229, 89, 58, 1);
+    margin-bottom: 5%; }
+    .video-player .now-playing iframe {
+      width: 25%;
+      height: 70px; }
+    .video-player .now-playing button {
+      border: 1px solid RGBA(137, 137, 137, 1);
+      background-color: transparent;
+      width: 27%;
+      height: 25px;
+      border-radius: 25px;
+      align-self: center;
+      color: RGBA(137, 137, 137, 1);
+      text-transform: uppercase;
+      font-style: itallic; }
+    .video-player .now-playing .now-playing-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .video-player .now-playing .now-playing-text h1 {
+        margin-bottom: 5%;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 900; }
+      .video-player .now-playing .now-playing-text p {
+        font-size: .7rem;
+        text-transform: uppercase; }
+  .video-player .video-description {
+    color: RGBA(137, 137, 137, 1);
+    margin-bottom: 5%; }
+  .video-player .more-video {
+    display: flex;
+    justify-content: center; }
+    .video-player .more-video button {
+      background-color: RGBA(500, 89, 58, 1);
+      width: 150px;
+      height: 40px;
+      border-radius: 26px;
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin-bottom: 20%; }
+
+.catalina-hills {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-top: 2px solid RGBA(40, 40, 40, 1);
+  border-bottom: 2px solid RGBA(40, 40, 40, 1);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 10%; }
+  .catalina-hills img {
+    width: 40%;
+    height: 90px; }
+  .catalina-hills .catalina-hills-text {
+    width: 52%;
+    color: RGBA(137, 137, 137, 1); }
+    .catalina-hills .catalina-hills-text h1 {
+      text-transform: uppercase;
+      margin-bottom: 5%;
+      color: white;
+      font-size: .9rem; }
+    .catalina-hills .catalina-hills-text h2 {
+      text-transform: uppercase;
+      color: white;
+      font-size: .8rem;
+      margin-bottom: 3%; }
+
+.news-letter-wrap {
+  margin: 0 auto;
+  background-color: RGBA(23, 23, 23, 1); }
+  .news-letter-wrap .news-letter-content {
+    width: 95%;
+    margin: 0 auto; }
+    .news-letter-wrap .news-letter-content h1 {
+      color: white; }
 
 /*# sourceMappingURL=main.css.map */
