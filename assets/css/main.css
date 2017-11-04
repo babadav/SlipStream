@@ -87,7 +87,7 @@ header {
 
 .board-slider-wrap {
   width: 100%;
-  padding-bottom: 2vh;
+  padding-bottom: 10%;
   background-color: RGBA(14, 14, 14, 1); }
   .board-slider-wrap .board-slider-head h1 {
     position: relative;
@@ -112,17 +112,18 @@ header {
   .board-slider-wrap .board-slider ul {
     display: flex;
     justify-content: space-around;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 10%; }
     .board-slider-wrap .board-slider ul li {
       transform: rotate(15deg); }
   .board-slider-wrap .slider-dots-wrap {
-    width: 50%;
+    width: 25%;
     display: flex;
     justify-content: space-around;
     margin: 0 auto; }
     .board-slider-wrap .slider-dots-wrap .dot {
-      width: 20px;
-      height: 20px;
+      width: 13px;
+      height: 13px;
       background-color: RGBA(100, 203, 224, 1);
       border-radius: 50px; }
 
@@ -137,7 +138,8 @@ header {
     background-color: RGBA(229, 88, 58, 1);
     background-size: cover;
     background-position: center center;
-    padding-bottom: 20%; }
+    padding-bottom: 20%;
+    padding-top: 10%; }
     .promos-wrap .beginners-guide h1 {
       text-align: center;
       color: white;
@@ -151,14 +153,14 @@ header {
       font-weight: 900;
       margin-bottom: 5%; }
     .promos-wrap .beginners-guide button {
-      width: 300px;
+      width: 250px;
       text-align: center;
       height: 55px;
       background-color: RGBA(72, 156, 174, 1);
       color: white;
       font-size: 1rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.4px;
       align-items: center;
       align-content: center;
       justify-content: center;
@@ -209,7 +211,7 @@ header {
     margin: 0 auto;
     margin-top: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: RGBA(229, 89, 58, 1);
     margin-bottom: 5%; }
     .video-player .now-playing iframe {
@@ -218,7 +220,7 @@ header {
     .video-player .now-playing button {
       border: 1px solid RGBA(137, 137, 137, 1);
       background-color: transparent;
-      width: 27%;
+      width: 33%;
       height: 25px;
       border-radius: 25px;
       align-self: center;
@@ -245,8 +247,8 @@ header {
     justify-content: center; }
     .video-player .more-video button {
       background-color: RGBA(500, 89, 58, 1);
-      width: 150px;
-      height: 40px;
+      width: 220px;
+      height: 50px;
       border-radius: 26px;
       color: white;
       font-size: 1rem;
@@ -350,7 +352,7 @@ footer {
   align-items: center; }
   footer .social {
     display: flex;
-    width: 73%;
+    width: 45%;
     justify-content: space-evenly;
     margin: 0 auto;
     margin-bottom: 10%; }
@@ -358,5 +360,66 @@ footer {
       width: 65%; }
   footer address {
     color: RGBA(166, 166, 166, 1); }
+
+@media screen and (min-width: 768px) {
+  .hero .hero-content img {
+    width: 65%;
+    margin-bottom: 10%; }
+  .hero .hero-content button {
+    width: 330px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 1.5rem; }
+  .hero .hero-content .hero-text h2 {
+    font-size: 1.9rem; }
+    .hero .hero-content .hero-text h2 sup {
+      font-size: 1.4rem; }
+  .board-slider-wrap .board-slider-head img {
+    width: 40%; }
+  .board-slider-wrap .board-slider-head h1 {
+    font-size: 4rem;
+    top: 150px; }
+  .board-slider-wrap .board-slider ul {
+    justify-content: space-evenly; }
+  .promos-wrap .beginners-guide h1 {
+    width: 70%;
+    font-size: 3rem; }
+  .promos-wrap .beginners-guide button {
+    width: 470px;
+    height: 95px;
+    border-radius: 50px;
+    font-size: 2rem; }
+  .promos-wrap .stream-events {
+    width: 100%; }
+    .promos-wrap .stream-events h1 {
+      width: 30%;
+      font-size: 4rem;
+      top: 190px; }
+  .promos-wrap .video-player iframe {
+    height: 470px; }
+  .promos-wrap .video-player .now-playing iframe {
+    width: 38%;
+    height: 240px; }
+  .promos-wrap .video-player .now-playing button {
+    height: 35px; }
+  .promos-wrap .video-player .now-playing .now-playing-text h1 {
+    font-size: 1.3rem; }
+  .promos-wrap .video-player .now-playing .now-playing-text p {
+    font-size: 1rem;
+    width: 96%; }
+  .promos-wrap .video-player .video-description {
+    font-size: 1rem; }
+  .promos-wrap .video-player .catalina-hills img {
+    width: 50%;
+    height: 200px;
+    margin-right: 40px; }
+  .promos-wrap .video-player .catalina-hills .catalina-hills-text h1 {
+    font-size: 1.5rem; }
+  .promos-wrap .video-player .catalina-hills .catalina-hills-text h2 {
+    font-size: 1.2rem; }
+  .promos-wrap .video-player .catalina-hills .catalina-hills-text p {
+    font-size: .9rem; }
+  .promos-wrap .video-player .more-video button {
+    margin-bottom: 10%; } }
 
 /*# sourceMappingURL=main.css.map */
