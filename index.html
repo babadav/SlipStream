@@ -13,8 +13,8 @@
 	</head>
 	<body>
 		<header>
-			<nav role="navigation">
- 				<div id="menuToggle">
+			<nav class="mobile-only" role="navigation">
+ 				<div id="menuToggle" >
     				<input type="checkbox" />
 				    <span></span>
 				    <span></span>
@@ -34,8 +34,25 @@
 					<img src="assets/img/cart.png" alt="">
 					<p>( 2 )</p>
 				</div>
+			</nav>
+			<nav class="desktop-nav">
+				<ul >
+					<li><h1 class="logo">slipstream</h1></li>
+					<a href="#"><li>HOME</li></a>
+					<a href="#"><li>BOARDS</li></a>
+					<a href="#"><li>NEWS</li></a>
+					<a href="#"><li>TEAM</li></a>
+					<a href="#"><li>LEADERS</li></a>
+			    </ul>
+			    <div class="cart">
+			    	<p>LogIn</p>
+					<img src="assets/img/cart.png" alt="">
+					<p>( 2 )</p>
+				</div>
+				
+			</nav>
 		</header>
-	</nav>
+	
 		<section class="hero">
 			<div class="hero-content">
 				<div class="hero-text">
@@ -46,13 +63,23 @@
 				<img src="assets/img/platypus-graffiti.png" alt="">
 				<button>view series</button>
 			</div>
+			<div class="cut-out">
+				<h1>traces catalina boards</h1>
+			</div>
+				<div class="filters">
+					<ul>
+						<li>filter</li>
+						<li><input type="drop-down" placeholder="NEW ARRIVALS"></li>
+					</ul>
+				</div>
+				
 		</section>
 		<div class="board-slider-wrap">
-				<div class="board-slider-head">
+				<div class="board-slider-head mobile-only">
 					<h1>traces catalina</h1>
 					<img src="assets/img/catolina-graffiti-orange.png" alt="">
 				</div>
-				
+
 			
 			<div class="board-slider">
 				<ul>

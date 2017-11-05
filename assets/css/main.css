@@ -5,6 +5,8 @@ body {
 header {
   background-image: url(../../assets/img/header-bg.png);
   background-size: cover; }
+  header .desktop-nav {
+    display: none; }
   header nav {
     width: 100%;
     background-color: RGBA(0, 0, 0, 0.2);
@@ -121,10 +123,13 @@ header {
 
 .hero {
   width: 100%;
-  background-image: url(../../assets/img/hero-bg.png);
+  background-image: url(../../assets/img/desktop-bg.png);
   background-size: cover;
   text-align: center;
-  color: white; }
+  color: white;
+  background-position: 100%; }
+  .hero .cut-out {
+    display: none; }
   .hero .hero-content {
     position: relative;
     text-transform: uppercase;
@@ -469,7 +474,9 @@ footer {
     border-radius: 50px;
     font-size: 2rem; }
   .promos-wrap .stream-events {
-    width: 100%; }
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%; }
     .promos-wrap .stream-events h1 {
       font-size: 4rem;
       top: 190px; }
@@ -506,5 +513,78 @@ footer {
     padding-bottom: 5%; }
     footer .social {
       margin-bottom: 5%; } }
+
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none; }
+  header .desktop-nav {
+    display: flex;
+    background-color: unset; }
+  nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; }
+    nav ul li {
+      transition: all .4s; }
+      nav ul li h1 {
+        width: 25%;
+        height: 26px;
+        margin: 0 auto;
+        color: white; }
+      nav ul li:hover {
+        border: 1px solid white;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        padding: 6px 6px 6px 6px;
+        color: white; }
+  nav .cart {
+    width: 12%;
+    justify-content: space-evenly; }
+    nav .cart img {
+      margin-left: 8px; }
+  .hero {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .hero .cut-out {
+      display: block;
+      width: 100vw;
+      background-image: url(../../assets/img/cut-out.png);
+      background-size: cover;
+      padding-bottom: 30%;
+      position: relative;
+      background-repeat: no-repeat; }
+      .hero .cut-out h1 {
+        position: relative;
+        top: 15rem;
+        left: 4rem;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        width: 20%;
+        text-transform: uppercase;
+        line-height: 1.2;
+        background-image: url(../../assets/img/catolina-graffiti-orange.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 3px; }
+    .hero .hero-content img {
+      width: 25%;
+      position: relative;
+      left: 33%;
+      top: 50px; }
+    .hero .hero-content .hero-text {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      left: 256px;
+      top: 100px; }
+    .hero .hero-content button {
+      position: relative;
+      left: 33%;
+      top: 60px;
+      height: 70px; } }
 
 /*# sourceMappingURL=main.css.map */
