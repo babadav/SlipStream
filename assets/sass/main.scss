@@ -17,7 +17,136 @@ header{
 		justify-content: space-around;
 		padding-bottom: 3%;
 		padding-top: 3%;
+		height: 25px;
+//*********************************************
+a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
 
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+	width: 15%;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  width: 100vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+    background-color: rgba(14,14,14,.8);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+//*********************************************
 		.logo{
 			width: 60%;
 		    display: flex;
@@ -195,11 +324,13 @@ header{
 		background-position: center center;
 		padding-bottom: 20%;
 		padding-top: 10%;
+
 		h1{
 			text-align: center;
 			color: white;
 			font-size: 2rem;
 		    width: 100%;
+		    max-width: 280px;
 		    text-align: center;
 		    text-transform: uppercase;
 		    text-decoration: underline;
@@ -455,6 +586,7 @@ header{
 		    padding-bottom: 5%;
 
 			h1{
+				width: 70%;
 				color: white;
 				font-size: 1.2rem;
 				text-transform: uppercase;
@@ -500,22 +632,22 @@ footer{
 		.hero-content{
 
 			img{
-				width: 65%;
-				margin-bottom: 10%;
+				width: 55%;
+				margin-bottom: 5%;
 			}
 
 			button{
 				width: 330px;
-				height: 70px;
+				height: 80px;
 				border-radius: 50px;
 				font-size: 1.5rem;
 			}
 			.hero-text{
 				h2{
-					font-size: 1.9rem;
+					font-size: 2.4rem;
 
 					sup{
-						font-size: 1.4rem;
+						font-size: 1.7rem;
 					}
 				}
 			}
@@ -525,11 +657,12 @@ footer{
 	.board-slider-wrap{
 		.board-slider-head{
 			img{
-				width: 40%;
+				max-width: 380px;
 			}
 			h1{
 				font-size: 4rem;
 				top: 150px;
+				left: -30px;
 			}
 		}
 
@@ -544,12 +677,13 @@ footer{
 		.beginners-guide{
 			h1{
 				width: 70%;
+				max-width: 535px;
 				font-size: 3rem;
 			}
 
 			button{
 				width: 470px;
-				height: 95px;
+				height: 80px;
 				border-radius: 50px;
 				font-size: 2rem;
 			}
@@ -559,9 +693,12 @@ footer{
 			width: 100%;
 
 			h1{
-				width: 30%;
 				font-size: 4rem;
 				top: 190px;
+			}
+
+			img{
+				max-width: 350px;
 			}
 		}
 
@@ -623,6 +760,15 @@ footer{
 					margin-bottom: 10%;
 				}
 			}
+		}
+	}
+
+	footer{
+		padding-top: 10%;
+		padding-bottom: 5%;
+
+		.social{
+			margin-bottom: 5%;
 		}
 	}
 }
