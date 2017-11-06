@@ -1,3 +1,6 @@
+.desktop-only {
+  display: none; }
+
 body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif; }
@@ -5,8 +8,6 @@ body {
 header {
   background-image: url(../../assets/img/header-bg.png);
   background-size: cover; }
-  header .desktop-nav {
-    display: none; }
   header nav {
     width: 100%;
     background-color: RGBA(0, 0, 0, 0.2);

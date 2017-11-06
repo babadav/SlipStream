@@ -1,5 +1,7 @@
 $translucentBlack: RGBA(0, 0, 0, 0.2);
-
+.desktop-only{
+		display: none;
+	}
 
 body{
 	box-sizing: border-box;
@@ -10,9 +12,7 @@ header{
 	background-image: url(../../assets/img/header-bg.png);
 	background-size: cover;
 
-	.desktop-nav{
-		display: none;
-	}
+	
 
 	nav{
 		width: 100%;
@@ -306,6 +306,8 @@ a:hover
 		display: flex;
 		justify-content: space-around;
 		margin: 0 auto;
+
+	
 
 		.dot{
 			width: 13px;
@@ -957,6 +959,7 @@ footer{
 	.promos-wrap{
 		.beginners-guide{
 			display: flex;
+
 			img{
 				display: block;
 			}
