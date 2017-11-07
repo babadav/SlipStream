@@ -797,6 +797,11 @@ footer{
 	.mobile-only{
 		display: none;
 	}
+
+	.desktop-only{
+		display: flex;
+		}
+
 	
 	header{
 		.desktop-nav{
@@ -804,10 +809,7 @@ footer{
 		background-color: unset;
 		}
 
-		.desktop-only{
-		display: flex;
-		}
-	}
+			}
 	
 	
 	nav{

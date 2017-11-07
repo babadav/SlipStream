@@ -533,11 +533,11 @@ footer {
 @media screen and (min-width: 1024px) {
   .mobile-only {
     display: none; }
+  .desktop-only {
+    display: flex; }
   header .desktop-nav {
     display: flex;
     background-color: unset; }
-  header .desktop-only {
-    display: flex; }
   nav ul {
     width: 50%;
     display: flex;
