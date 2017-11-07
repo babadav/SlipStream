@@ -747,7 +747,9 @@ footer {
         margin-left: 102px; }
   footer {
     color: white;
-    background-color: RGB(39, 39, 39); }
+    background-color: RGB(39, 39, 39);
+    padding-top: 4%;
+    padding-bottom: 1%; }
     footer .content-wrap {
       width: 67.16%;
       margin: 0 auto;
@@ -760,7 +762,8 @@ footer {
         margin-bottom: 20px; }
       footer .content-wrap .foot-col ul li {
         font-size: .8rem;
-        margin-bottom: 5%; }
+        margin-bottom: 5%;
+        color: RGB(102, 102, 102); }
       footer .content-wrap .news-letter-content h1 {
         width: 40%;
         margin-bottom: 20px; }
@@ -783,6 +786,7 @@ footer {
         text-transform: uppercase; }
       footer .content-wrap .news-letter-content p {
         font-size: 0.7rem;
-        width: 107%; } }
+        width: 107%;
+        color: RGB(102, 102, 102); } }
 
 /*# sourceMappingURL=main.css.map */

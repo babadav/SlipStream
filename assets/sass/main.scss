@@ -1116,6 +1116,8 @@ footer{
 	footer{
 		color: white;
 		background-color: RGB(39, 39, 39);
+	    padding-top: 4%;
+	    padding-bottom: 1%;
 
 		.content-wrap{
 			width: 67.16%;
@@ -1135,6 +1137,7 @@ footer{
 		    		li{
 		    			font-size: .8rem;
 					    margin-bottom: 5%;
+					    color: RGB(102, 102, 102);
 		    		}
 		    	}
 		    }
@@ -1169,6 +1172,7 @@ footer{
 		    	p{
 		    		font-size: 0.7rem;
 				    width: 107%;
+				    color: RGB(102, 102, 102);
 		    	}
 
 
