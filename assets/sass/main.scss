@@ -3,6 +3,7 @@ $translucentBlack: RGBA(0, 0, 0, 0.2);
 		display: none;
 	}
 
+
 body{
 	box-sizing: border-box;
 	font-family: 'Lato', sans-serif;
@@ -307,7 +308,7 @@ a:hover
 		justify-content: space-around;
 		margin: 0 auto;
 
-	
+
 
 		.dot{
 			width: 13px;
@@ -795,6 +796,9 @@ footer{
 	.mobile-only{
 		display: none;
 	}
+	.desktop-only{
+		display: block;
+	}
 	header{
 		.desktop-nav{
 		display: flex;
@@ -957,14 +961,222 @@ footer{
 	}
 
 	.promos-wrap{
-		.beginners-guide{
-			display: flex;
+		.mobile-only{
+			display: none;
+		}
+	
+	.beginners-guide-desktop{
+		display: flex;
+		.beginners-image{
+			background-image: url(../../assets/img/beginners-guide.png);
+		    background-size: cover;
+		    padding-bottom: 30%;
+		    width: 50%;
+		    background-position: center;
+			}
+		}
 
-			img{
-				display: block;
+		.beginners-guide-text{
+			width: 50%;
+			background-color: RGB(247, 76, 43);
+			background-image: url(../../assets/img/beginners-guide-bg.png);
+			background-color: RGBA(229, 88, 58, 1.00);
+			display: flex;
+		    flex-direction: column;
+		    justify-content: flex-end;
+		    align-items: flex-end;
+
+
+			h1{
+			text-align: center;
+			color: white;
+			font-size: 2rem;
+		    width: 100%;
+		    max-width: 380px;
+		    text-align: center;
+		    text-transform: uppercase;
+		    text-decoration: underline;
+		    line-height: 1.4;
+		    font-style: italic;
+		    font-weight: 900;
+		    margin-bottom: 10%;
+		}
+
+			button{
+				width: 250px;
+			    text-align: center;
+			    height: 35px;
+			    background-color: RGBA(72, 156, 174, 1.00);
+			    color: white;
+			    font-size: 1rem;
+			    text-transform: uppercase;
+			    letter-spacing: 1.4px;
+			    align-items: center;
+			    align-content: center;
+			    justify-content: center;
+			    border-radius: 25px;
+			    margin-bottom: 6%;
+			    margin-right: 10%;
 			}
 		}
 	}
+	.slipstream-video-desktop{
+		width: 100%;
+		background-color: RGB(23, 23, 23);
+		color: white;
+		padding-bottom: 5%;
+		.slipstream-wrap{
+			width: 81.5%;
+			margin: 0 auto;
+			h1{
+			background-image: url(../../assets/img/slipstream-graffiti-blue.png);
+			width: 15%;
+		    background-size: contain;
+		    padding-bottom: 0%;
+		    font-size: 2.1rem;
+		    background-repeat: no-repeat;
+		    display: flex;
+		    justify-content: flex-start;
+		    /* align-items: center; */
+		    padding-left: 3%;
+		    padding-top: 3%;
+		    text-decoration: underline;
+		    text-transform: uppercase;
+		}
+
+		.playlist-wrap{
+			width: 100%;
+			display: flex;
+			padding-top: 5%;
+
+			.playlist-option-wrap{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				justify-content: center;
+				.playlist-option{
+				display: flex;
+				padding-bottom: 5%;
+				border-bottom: 1px solid;
+			    margin-bottom: 4%;
+
+					img{
+					    width: 190px;
+						padding-right: 3%;
+					}
+
+					.playlist-option-text{
+						h2{
+							font-size: 1.2rem;
+							letter-spacing: 1.1px;
+							margin-bottom: 2px;
+							text-transform: uppercase;
+						}
+
+						h3{
+							font-size: .8rem;
+							letter-spacing: 1.1px;
+							margin-bottom: 10px;
+							text-transform: uppercase;
+						}
+
+						p{
+							color: RGBA(166, 166, 166, 1);
+						    width: 74%;
+						    line-height: 1.1;
+						}
+
+					}
+				}
+
+				button{
+					align-self: center;
+				    width: 280px;
+				    background: transparent;
+				    color: white;
+				    height: 60px;
+				    border-radius: 50px;
+				    border: 2px solid white;
+				    text-transform: uppercase;
+				}
+			}
+
+			
+		}
+
+			iframe{
+				width: 110%;
+			    height: 415px;
+			    margin-left: 102px;
+
+			}
+		}	
+	}
+
+	footer{
+		color: white;
+		background-color: RGB(39, 39, 39);
+
+		.content-wrap{
+			width: 67.16%;
+			margin: 0 auto;
+			display: flex;
+		    justify-content: space-between;
+		    text-transform: uppercase;
+
+		    .foot-col{
+		    	h1{
+		    		width: 60%;
+		    		font-size: 1rem;
+		    		margin-bottom: 20px;
+		    	}
+
+		    	ul{
+		    		li{
+		    			font-size: .8rem;
+					    margin-bottom: 5%;
+		    		}
+		    	}
+		    }
+
+		    .news-letter-content{
+		    	h1{
+		    		width: 40%;
+		    		margin-bottom: 20px;
+		    	}
+
+		    	input{
+	    		    width: 220px;
+				    height: 30px;
+				    background-color: transparent;
+				    border: 1px solid white;
+				    border-radius: 50px;
+				    padding-left: 20px;
+				    margin-bottom: 20px;
+				    margin-right: 2%;
+		    	}
+
+		    	button{
+		    		width: 65px;
+		    		height: 30px;
+		    		border: 1px solid white;
+				    border-radius: 50px;
+				    background-color: rgb(61, 163, 200);
+				    color: white;
+				    text-transform: uppercase;
+		    	}
+
+		    	p{
+		    		font-size: 0.7rem;
+				    width: 107%;
+		    	}
+
+
+		    }
+		}
+
+
+	}		
 }
 
 
