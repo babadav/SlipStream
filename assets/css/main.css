@@ -638,7 +638,6 @@ footer {
     display: flex; }
     .promos-wrap .beginners-guide-desktop .beginners-image {
       background-image: url(../../assets/img/beginners-guide.png);
-      background-size: cover;
       padding-bottom: 30%;
       width: 50%;
       background-position: center; }
