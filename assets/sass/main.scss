@@ -797,13 +797,15 @@ footer{
 	.mobile-only{
 		display: none;
 	}
-	.desktop-only{
-		display: block;
-	}
+	
 	header{
 		.desktop-nav{
 		display: flex;
 		background-color: unset;
+		}
+
+		.desktop-only{
+		display: flex;
 		}
 	}
 	
