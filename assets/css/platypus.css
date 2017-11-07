@@ -1,0 +1,14 @@
+body {
+  font-color: white;
+  background-color: black; }
+
+p, h1, h2, h3 {
+  font-color: white; }
+
+.pinstripe-wrap {
+  width: 85%;
+  margin: 0 auto; }
+  .pinstripe-wrap .pinstripe-head h1 {
+    color: white; }
+
+/*# sourceMappingURL=platypus.css.map */
