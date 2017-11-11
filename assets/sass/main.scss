@@ -1,4 +1,8 @@
 @import 'platypus.scss';
+
+
+
+
 $translucentBlack: RGBA(0, 0, 0, 0.2);
 .desktop-only{
 		display: none;
@@ -18,7 +22,6 @@ header{
 
 	nav{
 		width: 100%;
-		background-color: $translucentBlack;
 		display: flex;
 		justify-content: space-around;
 		padding-bottom: 3%;
@@ -248,11 +251,16 @@ a:hover
 		    width: 150px;
 		    height: 40px;
 		    border-radius: 26px;
-		    color: white;
-		    font-size: 1rem;
-		    text-transform: uppercase;
-		    letter-spacing: 1.4px;
-		    margin-bottom: 30%;
+		    
+
+		    a{
+			    color: white;
+			    font-size: 1rem;
+			    text-transform: uppercase;
+			    letter-spacing: 1.4px;
+			    margin-bottom: 30%;
+			    text-decoration: none;
+		    }
     	}
     }
 }
@@ -809,25 +817,27 @@ footer{
 		background-color: unset;
 		}
 
-			}
+	}
 	
 	
 	nav{
 
 		ul{
-			width: 50%;
+			width: 55%;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			align-items: flex-end;
+			margin-right: 15%;
 
 			li{
 				transition: all .4s;
-				h1{
-					width: 25%;
-				height: 26px;
-				margin: 0 auto;
-				color: white;
-				}
+				font-size: .8rem;
+					h1{
+						width: 25%;
+						height: 26px;
+						margin: 0 auto;
+						color: white;
+					}
 				
 				&:hover{
 				    border: 1px solid white;
@@ -841,7 +851,7 @@ footer{
 		}
 
 		.cart{
-			width: 12%;
+			width: 46%;
 			justify-content: space-evenly;
 
 			img{
@@ -908,8 +918,9 @@ footer{
 
 			ul{
 				display: flex;
-			    width: 80%;
+			    width: 62%;
 			    justify-content: flex-end;
+			    border-bottom: 1px solid white;
 
 			    li{
 			    	color: rgb(50,206, 208);
@@ -1069,7 +1080,8 @@ footer{
 			    margin-bottom: 4%;
 
 					img{
-					    width: 190px;
+					    width: 30%;
+					    height: 110px;
 						padding-right: 3%;
 					}
 

@@ -2,13 +2,194 @@ body {
   font-color: white;
   background-color: black; }
 
-p, h1, h2, h3 {
-  font-color: white; }
+.cut-out {
+  width: 100%;
+  background-image: url(../../assets/img/cut-out.png);
+  background-size: cover;
+  padding-bottom: 10%; }
 
 .pinstripe-wrap {
-  width: 85%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 82%;
   margin: 0 auto; }
-  .pinstripe-wrap .pinstripe-head h1 {
-    color: white; }
+  .pinstripe-wrap p, .pinstripe-wrap h1, .pinstripe-wrap h2, .pinstripe-wrap h3 {
+    font-color: white; }
+  .pinstripe-wrap .pinstripe-head {
+    padding-bottom: 4%;
+    border-bottom: 1px solid RGB(139, 139, 139);
+    margin-bottom: 10%; }
+    .pinstripe-wrap .pinstripe-head h1 {
+      color: white;
+      font-size: 2rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 2%; }
+    .pinstripe-wrap .pinstripe-head .bread-crumbs {
+      color: RGB(139, 139, 139);
+      font-size: .8rem;
+      display: flex;
+      justify-content: space-between;
+      width: 17%;
+      text-transform: uppercase; }
+  .pinstripe-wrap .pinstripe-content {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    flex-wrap: wrap; }
+    .pinstripe-wrap .pinstripe-content .product-image {
+      width: 36%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-right: 3%; }
+      .pinstripe-wrap .pinstripe-content .product-image img {
+        height: 500px;
+        margin-right: 10%; }
+    .pinstripe-wrap .pinstripe-content .product-description {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .pinstripe-wrap .pinstripe-content .product-description .product-description-head {
+        display: flex; }
+        .pinstripe-wrap .pinstripe-content .product-description .product-description-head .text-wrap h1 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          color: RGB(50, 206, 208);
+          font-style: italic; }
+        .pinstripe-wrap .pinstripe-content .product-description .product-description-head img {
+          height: 74px;
+          max-width: 115px;
+          margin-right: 2%; }
+      .pinstripe-wrap .pinstripe-content .product-description p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        color: RGB(139, 139, 139);
+        line-height: 30px;
+        font-size: .9rem; }
+      .pinstripe-wrap .pinstripe-content .product-description .customize {
+        display: flex;
+        margin-bottom: 5%;
+        padding-left: 7%; }
+        .pinstripe-wrap .pinstripe-content .product-description .customize p {
+          color: RGB(50, 206, 208);
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: .7rem; }
+        .pinstripe-wrap .pinstripe-content .product-description .customize .customize-color {
+          display: flex;
+          width: 30%;
+          justify-content: space-around;
+          align-items: center;
+          margin-right: 20%; }
+          .pinstripe-wrap .pinstripe-content .product-description .customize .customize-color .color-option-1 {
+            width: 34px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #875500;
+            margin-right: 10px; }
+          .pinstripe-wrap .pinstripe-content .product-description .customize .customize-color .color-option-2 {
+            width: 34px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #0cd5c4;
+            margin-right: 10px; }
+          .pinstripe-wrap .pinstripe-content .product-description .customize .customize-color .color-option-3 {
+            width: 34px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #d87b00;
+            margin-right: 10px; }
+        .pinstripe-wrap .pinstripe-content .product-description .customize .customize-size {
+          display: flex;
+          align-items: center; }
+          .pinstripe-wrap .pinstripe-content .product-description .customize .customize-size p {
+            margin-right: 20%; }
+          .pinstripe-wrap .pinstripe-content .product-description .customize .customize-size select {
+            background: transparent;
+            color: RGB(139, 139, 139); }
+      .pinstripe-wrap .pinstripe-content .product-description .price {
+        width: 31%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+        padding-left: 7%; }
+        .pinstripe-wrap .pinstripe-content .product-description .price p {
+          color: RGB(50, 206, 208);
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: .7rem; }
+        .pinstripe-wrap .pinstripe-content .product-description .price h1 {
+          font-size: 1.6rem; }
+      .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap {
+        display: flex;
+        margin-top: 10%;
+        padding-top: 10%;
+        border-top: 1px solid RGB(139, 139, 139);
+        text-transform: uppercase;
+        justify-content: space-between; }
+        .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half {
+          display: flex;
+          flex-direction: column; }
+          .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half button {
+            background-color: transparent;
+            border: 1px solid RGB(139, 139, 139);
+            color: RGB(139, 139, 139); }
+          .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half h1 {
+            font-size: 1.1rem;
+            margin-bottom: 20px; }
+          .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .functions, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .hardware, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .ply {
+            margin-bottom: 10%; }
+            .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .functions h2, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .hardware h2, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .ply h2 {
+              margin-bottom: 5%;
+              color: RGB(139, 139, 139);
+              font-size: .8rem; }
+            .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .functions h3, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .hardware h3, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .ply h3 {
+              color: RGB(50, 206, 208);
+              font-size: .8rem; }
+        .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half {
+          margin-bottom: 5%; }
+          .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half h1 {
+            font-size: 1.1rem;
+            margin-bottom: 20px; }
+          .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half iframe {
+            max-width: 370px;
+            height: 83%; }
+      .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap {
+        width: 100%;
+        margin-top: 10%;
+        padding-top: 5%;
+        border-top: 1px solid RGB(139, 139, 139); }
+        .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap .related-items-head {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 5%; }
+          .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap .related-items-head h1 {
+            text-transform: uppercase;
+            letter-spacing: 1.4px; }
+          .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap .related-items-head button {
+            width: 107px;
+            margin-top: unset;
+            background-color: transparent;
+            border: 1px solid;
+            color: RGB(139, 139, 139); }
+        .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap .related-items-slider {
+          width: 100%; }
+          .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap .related-items-slider ul {
+            display: flex; }
+    .pinstripe-wrap .pinstripe-content button {
+      width: 200px;
+      height: 35px;
+      border-radius: 50px;
+      background-color: RGB(247, 76, 43);
+      color: white;
+      text-transform: uppercase;
+      margin-top: 5%;
+      font-size: 1rem;
+      border: none; }
 
 /*# sourceMappingURL=platypus.css.map */
