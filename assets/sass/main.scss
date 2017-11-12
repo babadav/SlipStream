@@ -23,6 +23,7 @@ header{
 		padding-bottom: 3%;
 		padding-top: 3%;
 		height: 25px;
+
 //*********************************************
 a
 {
@@ -68,9 +69,7 @@ a:hover
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+
 #menuToggle span
 {
   display: block;
@@ -127,7 +126,7 @@ a:hover
   padding: 50px;
   padding-top: 125px;
   
-    background-color: rgba(14,14,14,.8);
+  background-color: rgba(14,14,14,.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -840,7 +839,7 @@ footer{
 					width: 60px;
 					text-align: center;
 					border-radius: 50px;
-					padding: 6px 6px 6px 6px;
+					padding: 7px;
 					color: white;
 				}
 			}
@@ -1261,6 +1260,47 @@ footer{
 
 
 
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+      img{
+      	margin: auto;
+      }
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
 
 
 
