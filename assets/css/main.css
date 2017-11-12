@@ -138,8 +138,9 @@ body {
             border: 1px solid RGB(139, 139, 139);
             color: RGB(139, 139, 139); }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half h1 {
-            font-size: 1.1rem;
-            margin-bottom: 20px; }
+            font-size: 1rem;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px; }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .functions, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .hardware, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .ply {
             margin-bottom: 10%; }
             .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .functions h2, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .hardware h2, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .ply h2 {
@@ -152,7 +153,9 @@ body {
         .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half {
           margin-bottom: 5%; }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half h1 {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
             margin-bottom: 20px; }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half iframe {
             max-width: 370px;
@@ -182,7 +185,7 @@ body {
           .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap .related-items-slider ul {
             display: flex; }
     .pinstripe-wrap .pinstripe-content button {
-      width: 200px;
+      width: 170px;
       height: 35px;
       border-radius: 50px;
       background-color: RGB(247, 76, 43);
@@ -756,9 +759,10 @@ footer {
       .hero .hero-content img {
         width: 15%;
         position: relative;
-        top: 180px;
+        top: 135px;
         left: 230px;
-        margin-bottom: 5%; }
+        margin-bottom: 5%;
+        margin-top: 1%; }
       .hero .hero-content .hero-text {
         margin: 0;
         width: 37%;
@@ -766,7 +770,7 @@ footer {
         justify-content: flex-end;
         position: relative;
         left: 62%;
-        top: 120px; }
+        top: 87px; }
         .hero .hero-content .hero-text h2 {
           font-size: 1.5rem;
           position: relative;
@@ -776,9 +780,9 @@ footer {
       .hero .hero-content button {
         width: 200px;
         position: relative;
-        top: 280px;
+        top: 220px;
         left: -90px;
-        height: 60px;
+        height: 40px;
         margin-bottom: unset; }
   .board-slider-wrap {
     padding-top: 5%;
@@ -791,7 +795,7 @@ footer {
         display: flex;
         width: 62%;
         justify-content: flex-end;
-        border-bottom: 1px solid white; }
+        border-bottom: 1px solid RGB(139, 139, 139); }
         .board-slider-wrap .filters ul li {
           color: #32ced0;
           align-self: center;
@@ -827,7 +831,7 @@ footer {
         padding-top: 1.1%;
         padding-left: 4%; }
     .board-slider-wrap .board-slider {
-      background-color: #0e0e0e;
+      background-color: black;
       padding-bottom: 5%;
       padding-top: 5%; }
       .board-slider-wrap .board-slider ul {
@@ -847,50 +851,58 @@ footer {
     width: 50%;
     background-color: RGB(247, 76, 43);
     background-image: url(../../assets/img/beginners-guide-bg.png);
-    background-color: RGBA(229, 88, 58, 1);
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end; }
     .promos-wrap .beginners-guide-text h1 {
-      text-align: center;
       color: white;
       font-size: 2rem;
       width: 100%;
       max-width: 380px;
-      text-align: center;
+      text-align: right;
       text-transform: uppercase;
       text-decoration: underline;
       line-height: 1.4;
       font-style: italic;
       font-weight: 900;
-      margin-bottom: 10%; }
+      margin-bottom: 2%;
+      margin-right: 20px; }
+    .promos-wrap .beginners-guide-text p {
+      color: white;
+      width: 64%;
+      font-size: 1.3rem;
+      position: relative;
+      margin-bottom: 3%;
+      line-height: 1.3; }
     .promos-wrap .beginners-guide-text button {
       width: 250px;
       text-align: center;
       height: 35px;
       background-color: RGBA(72, 156, 174, 1);
       color: white;
-      font-size: 1rem;
+      font-size: .8rem;
       text-transform: uppercase;
       letter-spacing: 1.4px;
       align-items: center;
       align-content: center;
       justify-content: center;
       border-radius: 25px;
-      margin-bottom: 6%;
+      margin-bottom: 7%;
       margin-right: 10%; }
   .slipstream-video-desktop {
     width: 100%;
-    background-color: RGB(23, 23, 23);
+    background-color: RGB(0, 0, 0);
     color: white;
     padding-bottom: 5%; }
     .slipstream-video-desktop .slipstream-wrap {
       width: 81.5%;
+      padding-top: 10%;
       margin: 0 auto; }
       .slipstream-video-desktop .slipstream-wrap h1 {
         background-image: url(../../assets/img/slipstream-graffiti-blue.png);
-        width: 15%;
+        width: 20%;
         background-size: contain;
         padding-bottom: 0%;
         font-size: 2.1rem;
@@ -899,9 +911,10 @@ footer {
         justify-content: flex-start;
         /* align-items: center; */
         padding-left: 3%;
-        padding-top: 3%;
+        padding-top: 6%;
         text-decoration: underline;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-style: italic; }
       .slipstream-video-desktop .slipstream-wrap .playlist-wrap {
         width: 100%;
         display: flex;
@@ -909,19 +922,20 @@ footer {
         .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap {
           display: flex;
           flex-direction: column;
-          width: 100%;
-          justify-content: center; }
+          width: 50%;
+          justify-content: center;
+          padding-bottom: 5%; }
           .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option {
             display: flex;
             padding-bottom: 5%;
-            border-bottom: 1px solid;
+            border-bottom: 1px solid RGB(139, 139, 139);
             margin-bottom: 4%; }
             .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option img {
-              width: 30%;
-              height: 110px;
+              width: 29%;
+              height: 65px;
               padding-right: 3%; }
             .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text h2 {
-              font-size: 1.2rem;
+              font-size: .9rem;
               letter-spacing: 1.1px;
               margin-bottom: 2px;
               text-transform: uppercase; }
@@ -933,19 +947,20 @@ footer {
             .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text p {
               color: RGBA(166, 166, 166, 1);
               width: 74%;
-              line-height: 1.1; }
+              line-height: 1.1;
+              font-size: .6rem; }
           .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap button {
             align-self: center;
-            width: 280px;
+            width: 160px;
             background: transparent;
             color: white;
-            height: 60px;
+            height: 40px;
             border-radius: 50px;
             border: 2px solid white;
             text-transform: uppercase; }
       .slipstream-video-desktop .slipstream-wrap iframe {
-        width: 110%;
-        height: 415px;
+        width: 870px;
+        height: 310px;
         margin-left: 102px; }
   footer {
     color: white;
@@ -953,42 +968,54 @@ footer {
     padding-top: 4%;
     padding-bottom: 1%; }
     footer .content-wrap {
-      width: 67.16%;
+      width: 87.16%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       text-transform: uppercase; }
-      footer .content-wrap .foot-col h1 {
-        width: 60%;
-        font-size: 1rem;
-        margin-bottom: 20px; }
-      footer .content-wrap .foot-col ul li {
-        font-size: .8rem;
-        margin-bottom: 5%;
-        color: RGB(102, 102, 102); }
-      footer .content-wrap .news-letter-content h1 {
-        width: 40%;
-        margin-bottom: 20px; }
-      footer .content-wrap .news-letter-content input {
-        width: 220px;
-        height: 30px;
-        background-color: transparent;
-        border: 1px solid white;
-        border-radius: 50px;
-        padding-left: 20px;
-        margin-bottom: 20px;
-        margin-right: 2%; }
-      footer .content-wrap .news-letter-content button {
-        width: 65px;
-        height: 30px;
-        border: 1px solid white;
-        border-radius: 50px;
-        background-color: #3da3c8;
-        color: white;
-        text-transform: uppercase; }
-      footer .content-wrap .news-letter-content p {
-        font-size: 0.7rem;
-        width: 107%;
-        color: RGB(102, 102, 102); } }
+      footer .content-wrap .foot-col {
+        width: 25%; }
+        footer .content-wrap .foot-col h1 {
+          min-width: 130px;
+          width: 58%;
+          font-size: 1rem;
+          margin-bottom: 20px; }
+        footer .content-wrap .foot-col ul li {
+          font-size: .8rem;
+          margin-bottom: 5%;
+          color: RGB(102, 102, 102); }
+      footer .content-wrap .newsletter {
+        min-width: 320px; }
+        footer .content-wrap .newsletter .news-letter-content h1 {
+          min-width: 138px;
+          width: 45%;
+          margin-bottom: 20px; }
+        footer .content-wrap .newsletter .news-letter-content input {
+          width: 220px;
+          height: 30px;
+          background-color: transparent;
+          border: 1px solid white;
+          border-radius: 50px;
+          padding-left: 20px;
+          margin-bottom: 20px;
+          margin-right: 2%; }
+        footer .content-wrap .newsletter .news-letter-content button {
+          width: 65px;
+          height: 30px;
+          border: none;
+          border-radius: 50px;
+          background-color: #3da3c8;
+          color: white;
+          text-transform: uppercase; }
+        footer .content-wrap .newsletter .news-letter-content p {
+          font-size: 0.7rem;
+          width: 107%;
+          color: RGB(102, 102, 102); } }
+
+@media screen and (min-width: 1366px) {
+  .hero .hero-content img {
+    left: 280px; }
+  .hero .hero-content .hero-text h2 {
+    top: -90px; } }
 
 /*# sourceMappingURL=main.css.map */

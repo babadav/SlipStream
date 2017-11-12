@@ -138,8 +138,9 @@ body {
             border: 1px solid RGB(139, 139, 139);
             color: RGB(139, 139, 139); }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half h1 {
-            font-size: 1.1rem;
-            margin-bottom: 20px; }
+            font-size: 1rem;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px; }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .functions, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .hardware, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .ply {
             margin-bottom: 10%; }
             .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .functions h2, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .hardware h2, .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .left-half .ply h2 {
@@ -152,7 +153,9 @@ body {
         .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half {
           margin-bottom: 5%; }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half h1 {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
             margin-bottom: 20px; }
           .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half iframe {
             max-width: 370px;
@@ -182,7 +185,7 @@ body {
           .pinstripe-wrap .pinstripe-content .product-description .related-items-wrap .related-items-slider ul {
             display: flex; }
     .pinstripe-wrap .pinstripe-content button {
-      width: 200px;
+      width: 170px;
       height: 35px;
       border-radius: 50px;
       background-color: RGB(247, 76, 43);

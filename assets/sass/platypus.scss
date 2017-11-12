@@ -193,8 +193,9 @@ body{
 					    
 
 					    h1{
-				    	    font-size: 1.1rem;
+				    	    font-size: 1rem;
 			    	        margin-bottom: 20px;
+			    	        letter-spacing: 1.5px;
 					    }
 
 					   	.functions, .hardware, .ply {
@@ -217,7 +218,9 @@ body{
 		    			margin-bottom: 5%;
 
 		    			h1{
-		    				font-size: 1.1rem;
+		    				font-size: 1rem;
+		    				margin-bottom: 20px;
+			    	        letter-spacing: 1.5px;
 		    				margin-bottom: 20px;
 		    			}
 
@@ -268,7 +271,7 @@ body{
 		}
 
 		button{
-		    width: 200px;
+		    width: 170px;
 		    height: 35px;
 		    border-radius: 50px;
 		    background-color: RGB(247, 76,43);
