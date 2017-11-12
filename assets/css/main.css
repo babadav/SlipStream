@@ -984,6 +984,10 @@ footer {
           font-size: .8rem;
           margin-bottom: 5%;
           color: RGB(102, 102, 102); }
+          footer .content-wrap .foot-col ul li span {
+            color: RGB(247, 76, 43); }
+        footer .content-wrap .foot-col ul .blue {
+          color: #3da3c8; }
       footer .content-wrap .newsletter {
         min-width: 320px; }
         footer .content-wrap .newsletter .news-letter-content h1 {
@@ -1010,7 +1014,12 @@ footer {
         footer .content-wrap .newsletter .news-letter-content p {
           font-size: 0.7rem;
           width: 107%;
-          color: RGB(102, 102, 102); } }
+          color: RGB(102, 102, 102); }
+          footer .content-wrap .newsletter .news-letter-content p span {
+            color: RGB(247, 76, 43); }
+      footer .content-wrap .board-types h1 {
+        min-width: unset;
+        width: 46%; } }
 
 @media screen and (min-width: 1366px) {
   .hero .hero-content img {

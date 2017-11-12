@@ -1,9 +1,5 @@
 @import 'platypus.scss';
 
-
-
-
-$translucentBlack: RGBA(0, 0, 0, 0.2);
 .desktop-only{
 		display: none;
 	}
@@ -1161,6 +1157,8 @@ footer{
 			display: flex;
 		    justify-content: space-between;
 		    text-transform: uppercase;
+			
+			
 
 		    .foot-col{
 		    	width: 25%;
@@ -1171,11 +1169,21 @@ footer{
 		    		margin-bottom: 20px;
 		    	}
 
+
+
 		    	ul{
 		    		li{
 		    			font-size: .8rem;
 					    margin-bottom: 5%;
 					    color: RGB(102, 102, 102);
+
+					    span{
+					    	color: RGB(247, 76, 43);
+					    }
+		    		}
+
+		    		.blue{
+		    			color: #3da3c8;
 		    		}
 		    	}
 		    }
@@ -1216,9 +1224,20 @@ footer{
 			    		font-size: 0.7rem;
 					    width: 107%;
 					    color: RGB(102, 102, 102);
+
+					    span{
+					    	color: RGB(247, 76, 43);
+					    }
 			    	}
 				}
 			}
+
+			.board-types{
+				h1{
+					min-width: unset;
+					width: 46%;
+				}
+		    }
 		}	    
 	}		
 }
