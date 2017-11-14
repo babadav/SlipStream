@@ -7,9 +7,17 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="assets/css/reset.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		
+		
 	</head>
 	<body>
 		<header>
@@ -61,13 +69,13 @@
 				edition to slipstream</h2>
 				</div>
 				
-				<img src="assets/img/platypus-graffiti.png" alt="">
-				<button><a href="platypus.html">VIEW SERIES</a></button>
+				<img class="platypus-image" src="assets/img/platypus-graffiti.png" alt="">
+				<button class="series-button"><a href="platypus.html">VIEW SERIES</a></button>
 			</div>
 		</section>
 		<div class="board-slider-wrap">
 				<div class="filters desktop-only">
-					<h1>traces catalina boards</h1>
+					<h1 class="traces">traces catalina boards</h1>
 					<ul>
 						<li>filter</li>
 						<li class="new-arrivals">
@@ -86,38 +94,94 @@
 					<img src="assets/img/catolina-graffiti-orange.png" alt="">
 				</div>
 
+
+			
+
+
+
+				<div class="container">
+				  <div class="row">
+				    <div class="col-md-12">
+				      <div class="carousel slide multi-item-carousel" id="myCarousel">
+				        <div class="carousel-inner">
+				          <div class="item active">
+				            <div class="col-xs-4 "><a href="#1"><img src="assets/img/boards/board_pandas.png" class="img-responsive"></a></div>
+				          </div>
+				          <div class="item">
+				            <div class="col-xs-4 "><a href="#1"><img src="assets/img/boards/board_fibrefresh.png" class="img-responsive"></a></div>
+				          </div>
+				          <div class="item">
+				            <div class="col-xs-4 "><a href="#1"><img src="assets/img/boards/board_lowrider.png" class="img-responsive"></a></div>
+				          </div>
+				          <div class="item">
+				            <div class="col-xs-4 "><a href="#1"><img src="assets/img/boards/board_card.png" class="img-responsive"></a></div>
+				          </div>
+				          <div class="item">
+				            <div class="col-xs-4 "><a href="#1"><img src="assets/img/boards/board_sushi.png" class="img-responsive"></a></div>
+				          </div>
+				          <div class="item">
+				            <div class="col-xs-4 "><a href="#1"><img src="assets/img/boards/board_critics.png" class="img-responsive"></a></div>
+				          </div>
+				          
+				          <!--  Example item end -->
+				        </div>
+				        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+				        <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+				        <ol class="carousel-indicators">
+			            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			            <li data-target="#myCarousel" data-slide-to="1"></li>
+			            <li data-target="#myCarousel" data-slide-to="2"></li>
+			            <li data-target="#myCarousel" data-slide-to="3"></li>
+			            <li data-target="#myCarousel" data-slide-to="4"></li>
+			            <li data-target="#myCarousel" data-slide-to="5"></li>
+        				</ol>  
+				      </div>
+				    </div>
+				  </div>
+			</div>
+
+
+
+
+
+
+
+
+
 			
 			<div class="board-slider">
-				<ul>
+				<!-- <ul>
 					<li><img src="assets/img/boards/board_card.png" alt=""></li>
 					<li><img src="assets/img/boards/board_sushi.png" alt=""></li>
 					<li><img src="assets/img/boards/board_lowrider.png" alt=""></li>
 					<li><img src="assets/img/boards/board_pandas.png" alt=""></li>
 					<li><img src="assets/img/boards/board_fibrefresh.png" alt=""></li>
 					<li><img src="assets/img/boards/critics.png" alt=""></li>
-				</ul>
-				<div class="slider-dots-wrap">
+				</ul> -->
+			<!-- 	<div class="slider-dots-wrap">
 					<div class="dot"></div>
 					<div class="dot"></div>
 					<div class="dot"></div>
 					<div class="dot"></div>
 					<div class="dot"></div>
 					<div class="dot"></div>
-				</div>
+				</div> -->
 			</div>
 		</div>
+
 		<section class="promos-wrap">
 			<div class="beginners-guide-desktop desktop-only">
 				<div class="beginners-image"></div>
 				<div class="beginners-guide-text">
 					<h1>don't know where to get started with longboarding?</h1>
 					<p>Learn about different longboard bases, wheels, materials, and helpful tips</p>
-					<button>our beginner's guide</button>
+					<button class="beginner-button">our beginner's guide</button>
 				</div>
 			</div>
 			<div class="beginners-guide mobile-only">
 				<h1>don't know where to get started with longboarding?</h1>
-				<button>our beginner's guide</button>
+				<button class="mobile-beginners">our beginner's guide</button>
 				<img clas="beginners-guide-promo" src="assets/img/beginners-guide.png" alt="">
 			</div>
 			<div class="stream-events mobile-only">
@@ -138,11 +202,13 @@
 				<p class="video-description">In the eleventh installment of the Traces series the Swedish Slipstream team hook up with the Funk Squad in the corridor.</p>
 
 				<div class="catalina-hills">
-					<img src="assets/img/catolina-hills.png" alt="">
-					<div class="catalina-hills-text">
-						<h1>catolina hills</h1>
-						<h2>september 2016</h2>
-						<p>In the ninth episode of the Traces series the Slipstream team contiue exploring Catalina in extreme...</p>
+					<div class="catalina-shrink">
+						<img src="assets/img/catolina-hills.png" alt="">
+						<div class="catalina-hills-text">
+							<h1>catolina hills</h1>
+							<h2>september 2016</h2>
+							<p>In the ninth episode of the Traces series the Slipstream team contiue exploring Catalina in extreme...</p>
+						</div>
 					</div>
 				</div>
 				<div class="more-video">
@@ -155,22 +221,26 @@
 					<div class="playlist-wrap">
 						<div class="playlist-option-wrap">
 							<div class="playlist-option">
-							<img src="assets/img/catolina-hills.png" alt="">
-							<div class="playlist-option-text">
-								<h2>sweden llc</h2>
-								<h3>january 2017</h3>
+								<div class="playlist-shrink">
+									<img src="assets/img/catolina-hills.png" alt="">
+									<div class="playlist-option-text">
+										<h2>sweden llc</h2>
+										<h3>january 2017</h3>
 
-								<p>In the eleventh installment of the Traces series the Swedish Slipstream team hook up with fnuk...</p>
-							</div>
+										<p>In the eleventh installment of the Traces series the Swedish Slipstream team hook up with fnuk...</p>
+									</div>
+								</div>
 						</div>
 						
 							<div class="playlist-option">
-								<img src="assets/img/catolina-hills.png" alt="">
-								<div class="playlist-option-text">
-									<h2>catalionia hills</h2>
-									<h3>september 2-16</h3>
-									
-									<p>In the ninth episode of the Traces series the Slipstream team continue exploring Catalonia in extreme..</p>
+								<div class="playlist-shrink">
+									<img src="assets/img/catolina-hills.png" alt="">
+									<div class="playlist-option-text">
+										<h2>catalionia hills</h2>
+										<h3>september 2-16</h3>
+										
+										<p>In the ninth episode of the Traces series the Slipstream team continue exploring Catalonia in extreme..</p>
+									</div>
 								</div>
 							</div>
 							<button>more-videos</button>
@@ -266,7 +336,7 @@
 		</footer>
 		
 
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>

@@ -213,9 +213,6 @@ header {
     padding-top: 3%;
     height: 25px;
     /*
- * Just a quick hamburger
- */
-    /*
  * And let's slide it in from the left
  */ }
     header nav a {
@@ -350,7 +347,8 @@ header {
       width: 50%;
       margin: 0 auto;
       left: 25%;
-      margin-bottom: 5%; }
+      margin-bottom: 5%;
+      visibility: hidden; }
     .hero .hero-content button {
       background-color: RGBA(500, 89, 58, 1);
       width: 150px;
@@ -548,22 +546,25 @@ header {
   padding-top: 5%;
   padding-bottom: 5%;
   margin-bottom: 10%; }
-  .catalina-hills img {
-    width: 40%;
-    height: 90px; }
-  .catalina-hills .catalina-hills-text {
-    width: 52%;
-    color: RGBA(137, 137, 137, 1); }
-    .catalina-hills .catalina-hills-text h1 {
-      text-transform: uppercase;
-      margin-bottom: 5%;
-      color: white;
-      font-size: .9rem; }
-    .catalina-hills .catalina-hills-text h2 {
-      text-transform: uppercase;
-      color: white;
-      font-size: .8rem;
-      margin-bottom: 3%; }
+  .catalina-hills .catalina-shrink {
+    display: flex;
+    justify-content: space-around; }
+    .catalina-hills .catalina-shrink img {
+      width: 40%;
+      height: 90px; }
+    .catalina-hills .catalina-shrink .catalina-hills-text {
+      width: 52%;
+      color: RGBA(137, 137, 137, 1); }
+      .catalina-hills .catalina-shrink .catalina-hills-text h1 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+        color: white;
+        font-size: .9rem; }
+      .catalina-hills .catalina-shrink .catalina-hills-text h2 {
+        text-transform: uppercase;
+        color: white;
+        font-size: .8rem;
+        margin-bottom: 3%; }
 
 .news-letter-wrap {
   margin: 0 auto;
@@ -729,13 +730,27 @@ footer {
     justify-content: space-evenly;
     align-items: flex-end;
     margin-right: 15%; }
-    nav ul li {
+    nav ul li h1 {
+      width: 25%;
+      height: 26px;
+      margin: 0 auto;
+      color: white; }
+    nav ul a {
       transition: all .4s;
       font-size: .8rem; }
+<<<<<<< HEAD
       nav ul li h1 {
         width: 25%;
         height: 26px;
         margin: 0 auto;
+=======
+      nav ul a:hover {
+        border: 1px solid white;
+        width: 80px;
+        text-align: center;
+        border-radius: 50px;
+        padding: 7px;
+>>>>>>> 9cc09334dfb2be1e90df0d4ea1f78a579853bdcc
         color: white; }
   nav .cart {
     width: 46%;
@@ -923,25 +938,27 @@ footer {
             padding-bottom: 5%;
             border-bottom: 1px solid RGB(139, 139, 139);
             margin-bottom: 4%; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option img {
-              width: 29%;
-              height: 65px;
-              padding-right: 3%; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text h2 {
-              font-size: .9rem;
-              letter-spacing: 1.1px;
-              margin-bottom: 2px;
-              text-transform: uppercase; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text h3 {
-              font-size: .8rem;
-              letter-spacing: 1.1px;
-              margin-bottom: 10px;
-              text-transform: uppercase; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text p {
-              color: RGBA(166, 166, 166, 1);
-              width: 74%;
-              line-height: 1.1;
-              font-size: .6rem; }
+            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink {
+              display: flex; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink img {
+                width: 29%;
+                height: 65px;
+                padding-right: 3%; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink .playlist-option-text h2 {
+                font-size: .9rem;
+                letter-spacing: 1.1px;
+                margin-bottom: 2px;
+                text-transform: uppercase; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink .playlist-option-text h3 {
+                font-size: .8rem;
+                letter-spacing: 1.1px;
+                margin-bottom: 10px;
+                text-transform: uppercase; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink .playlist-option-text p {
+                color: RGBA(166, 166, 166, 1);
+                width: 74%;
+                line-height: 1.1;
+                font-size: .6rem; }
           .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap button {
             align-self: center;
             width: 160px;
@@ -1019,5 +1036,32 @@ footer {
     left: 280px; }
   .hero .hero-content .hero-text h2 {
     top: -90px; } }
+
+.multi-item-carousel .carousel-inner > .item {
+  transition: 500ms ease-in-out left; }
+  .multi-item-carousel .carousel-inner > .item img {
+    margin: auto; }
+
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%; }
+
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%; }
+
+.multi-item-carousel .carousel-inner .next {
+  left: 33%; }
+
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%; }
+
+@media all and (transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    backface-visibility: visible;
+    transform: none !important; } }
+
+.multi-item-carousel .carouse-control.left, .multi-item-carousel .carouse-control.right {
+  background-image: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -23,6 +23,7 @@ header{
 		padding-bottom: 3%;
 		padding-top: 3%;
 		height: 25px;
+
 //*********************************************
 a
 {
@@ -68,9 +69,7 @@ a:hover
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+
 #menuToggle span
 {
   display: block;
@@ -127,7 +126,7 @@ a:hover
   padding: 50px;
   padding-top: 125px;
   
-    background-color: rgba(14,14,14,.8);
+  background-color: rgba(14,14,14,.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -240,6 +239,7 @@ a:hover
 		    margin: 0 auto;
 		    left: 25%;
 		    margin-bottom: 5%;
+		    visibility: hidden;
     	}
 
     	button{
@@ -507,31 +507,35 @@ a:hover
     padding-top: 5%;
     padding-bottom: 5%;
     margin-bottom: 10%;
+
+    .catalina-shrink{
+    	display: flex;
+    	justify-content: space-around;
     
-    img{
-    	width: 40%;
-    	height: 90px;
-    }
+	    img{
+	    	width: 40%;
+	    	height: 90px;
+	    }
 
-    .catalina-hills-text{
-    	width: 52%;
-    	color: RGBA(137, 137, 137, 1.00);
+	    .catalina-hills-text{
+	    	width: 52%;
+	    	color: RGBA(137, 137, 137, 1.00);
 
-    	h1{
-    		text-transform: uppercase;
-    		margin-bottom: 5%;
-    		color: white;
-    		font-size: .9rem;
-    	}
+	    	h1{
+	    		text-transform: uppercase;
+	    		margin-bottom: 5%;
+	    		color: white;
+	    		font-size: .9rem;
+	    	}
 
-    	h2{
-    		text-transform: uppercase;
-    		color: white;
-    		font-size: .8rem;
-    		margin-bottom: 3%;
-    	}
-    }
-
+	    	h2{
+	    		text-transform: uppercase;
+	    		color: white;
+	    		font-size: .8rem;
+	    		margin-bottom: 3%;
+	    	}
+	    }
+	}
 }
 
 .news-letter-wrap{
@@ -826,14 +830,29 @@ footer{
 			margin-right: 15%;
 
 			li{
-				transition: all .4s;
-				font-size: .8rem;
+				
 					h1{
 						width: 25%;
 						height: 26px;
 						margin: 0 auto;
 						color: white;
 					}
+
+			}
+
+			a {
+				transition: all .4s;
+				font-size: .8rem;
+
+				&:hover{
+				    border: 1px solid white;
+					width: 80px;
+					text-align: center;
+					border-radius: 50px;
+					padding: 7px;
+					color: white;
+				}
+
 			}
 		}
 
@@ -1081,34 +1100,38 @@ footer{
 				border-bottom: 1px solid RGB(139,139,139);
 			    margin-bottom: 4%;
 
-					img{
-					    width: 29%;
-					    height: 65px;
-						padding-right: 3%;
-					}
+			    	.playlist-shrink{
+			    		display: flex;
 
-					.playlist-option-text{
-						h2{
-							font-size: .9rem;
-							letter-spacing: 1.1px;
-							margin-bottom: 2px;
-							text-transform: uppercase;
+						img{
+						    width: 29%;
+						    height: 65px;
+							padding-right: 3%;
 						}
 
-						h3{
-							font-size: .8rem;
-							letter-spacing: 1.1px;
-							margin-bottom: 10px;
-							text-transform: uppercase;
-						}
+						.playlist-option-text{
+							h2{
+								font-size: .9rem;
+								letter-spacing: 1.1px;
+								margin-bottom: 2px;
+								text-transform: uppercase;
+							}
 
-						p{
-							color: RGBA(166, 166, 166, 1);
-						    width: 74%;
-						    line-height: 1.1;
-						    font-size: .6rem;
-						}
+							h3{
+								font-size: .8rem;
+								letter-spacing: 1.1px;
+								margin-bottom: 10px;
+								text-transform: uppercase;
+							}
 
+							p{
+								color: RGBA(166, 166, 166, 1);
+							    width: 74%;
+							    line-height: 1.1;
+							    font-size: .6rem;
+							}
+
+						}
 					}
 				}
 
@@ -1250,6 +1273,49 @@ footer{
 	}
 }
 
+
+
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+      img{
+      	margin: auto;
+      }
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
 
 
 
