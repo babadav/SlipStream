@@ -546,22 +546,25 @@ header {
   padding-top: 5%;
   padding-bottom: 5%;
   margin-bottom: 10%; }
-  .catalina-hills img {
-    width: 40%;
-    height: 90px; }
-  .catalina-hills .catalina-hills-text {
-    width: 52%;
-    color: RGBA(137, 137, 137, 1); }
-    .catalina-hills .catalina-hills-text h1 {
-      text-transform: uppercase;
-      margin-bottom: 5%;
-      color: white;
-      font-size: .9rem; }
-    .catalina-hills .catalina-hills-text h2 {
-      text-transform: uppercase;
-      color: white;
-      font-size: .8rem;
-      margin-bottom: 3%; }
+  .catalina-hills .catalina-shrink {
+    display: flex;
+    justify-content: space-around; }
+    .catalina-hills .catalina-shrink img {
+      width: 40%;
+      height: 90px; }
+    .catalina-hills .catalina-shrink .catalina-hills-text {
+      width: 52%;
+      color: RGBA(137, 137, 137, 1); }
+      .catalina-hills .catalina-shrink .catalina-hills-text h1 {
+        text-transform: uppercase;
+        margin-bottom: 5%;
+        color: white;
+        font-size: .9rem; }
+      .catalina-hills .catalina-shrink .catalina-hills-text h2 {
+        text-transform: uppercase;
+        color: white;
+        font-size: .8rem;
+        margin-bottom: 3%; }
 
 .news-letter-wrap {
   margin: 0 auto;
@@ -928,25 +931,27 @@ footer {
             padding-bottom: 5%;
             border-bottom: 1px solid RGB(139, 139, 139);
             margin-bottom: 4%; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option img {
-              width: 29%;
-              height: 65px;
-              padding-right: 3%; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text h2 {
-              font-size: .9rem;
-              letter-spacing: 1.1px;
-              margin-bottom: 2px;
-              text-transform: uppercase; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text h3 {
-              font-size: .8rem;
-              letter-spacing: 1.1px;
-              margin-bottom: 10px;
-              text-transform: uppercase; }
-            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-option-text p {
-              color: RGBA(166, 166, 166, 1);
-              width: 74%;
-              line-height: 1.1;
-              font-size: .6rem; }
+            .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink {
+              display: flex; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink img {
+                width: 29%;
+                height: 65px;
+                padding-right: 3%; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink .playlist-option-text h2 {
+                font-size: .9rem;
+                letter-spacing: 1.1px;
+                margin-bottom: 2px;
+                text-transform: uppercase; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink .playlist-option-text h3 {
+                font-size: .8rem;
+                letter-spacing: 1.1px;
+                margin-bottom: 10px;
+                text-transform: uppercase; }
+              .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap .playlist-option .playlist-shrink .playlist-option-text p {
+                color: RGBA(166, 166, 166, 1);
+                width: 74%;
+                line-height: 1.1;
+                font-size: .6rem; }
           .slipstream-video-desktop .slipstream-wrap .playlist-wrap .playlist-option-wrap button {
             align-self: center;
             width: 160px;
