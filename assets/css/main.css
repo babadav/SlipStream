@@ -195,6 +195,20 @@ body {
       font-size: 1rem;
       border: none; }
 
+@media screen and (max-width: 768px) {
+  .pinstripe-wrap {
+    width: 92%; }
+    .pinstripe-wrap .pinstripe-content {
+      display: flex;
+      flex-direction: column; }
+      .pinstripe-wrap .pinstripe-content .product-image {
+        width: 100%;
+        margin-bottom: 5%; }
+      .pinstripe-wrap .pinstripe-content .product-description {
+        width: 100%; }
+        .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half iframe {
+          max-width: 170px; } }
+
 .desktop-only {
   display: none; }
 
@@ -648,6 +662,7 @@ footer {
 @media screen and (min-width: 768px) {
   .hero .hero-content img {
     width: 55%;
+    max-width: 350px;
     margin-bottom: 5%; }
   .hero .hero-content button {
     width: 330px;
@@ -738,19 +753,12 @@ footer {
     nav ul a {
       transition: all .4s;
       font-size: .8rem; }
-<<<<<<< HEAD
-      nav ul li h1 {
-        width: 25%;
-        height: 26px;
-        margin: 0 auto;
-=======
       nav ul a:hover {
         border: 1px solid white;
         width: 80px;
         text-align: center;
         border-radius: 50px;
         padding: 7px;
->>>>>>> 9cc09334dfb2be1e90df0d4ea1f78a579853bdcc
         color: white; }
   nav .cart {
     width: 46%;

@@ -195,4 +195,18 @@ body {
       font-size: 1rem;
       border: none; }
 
+@media screen and (max-width: 768px) {
+  .pinstripe-wrap {
+    width: 92%; }
+    .pinstripe-wrap .pinstripe-content {
+      display: flex;
+      flex-direction: column; }
+      .pinstripe-wrap .pinstripe-content .product-image {
+        width: 100%;
+        margin-bottom: 5%; }
+      .pinstripe-wrap .pinstripe-content .product-description {
+        width: 100%; }
+        .pinstripe-wrap .pinstripe-content .product-description .specifics-wrap .right-half iframe {
+          max-width: 170px; } }
+
 /*# sourceMappingURL=platypus.css.map */
